@@ -7,7 +7,7 @@ addLayer("t", {
 		points: new Decimal(0),
     }},
     color: "#4BDC13",
-    requires: new Decimal(10), // Can be a function that takes requirement increases into account
+    requires: new Decimal(1), // Can be a function that takes requirement increases into account
     resource: "Tree Power", // Name of prestige currency
     baseResource: "EXP", // Name of resource prestige is based on
     baseAmount() {return player.points}, // Get the current amount of baseResource
@@ -24,5 +24,12 @@ addLayer("t", {
     hotkeys: [
         {key: "p", description: "P: Reset for prestige points", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
-    layerShown(){return true}
+    layerShown(){return true},
+    upgrades: {
+        11: {
+            name: "Begin Testing",
+            description: "Allows for the generation of EXP.",
+            cost: new Decimal(1),
+        },
+    },
 })
