@@ -40,7 +40,12 @@ function canGenPoints(){
 function getPointGen() {
 	if(!canGenPoints())
 		return new Decimal(0)
-	let gain = new Decimal(1)
+	let gain = new Decimal(0)
+	11: {
+		name: "Begin Testing",
+		description: "Allows for EXP gain.",
+		cost: new Decimal(1),
+	},
 	return gain
 }
 
