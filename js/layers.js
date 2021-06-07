@@ -26,10 +26,6 @@ addLayer("t", {
     ],
     layerShown(){return true},
     upgrades: {
-        11: {
-            name: "Begin Testing",
-            description: "Allows for the generation of EXP.",
-            cost: new Decimal(1),
-        },
+  
     },
 })
