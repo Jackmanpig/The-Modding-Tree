@@ -35,7 +35,7 @@ addLayer("t", {
     12: {
 		name: "Multi Attack",
 		description: "Doubles EXP gain.",
-		cost: new Decimal(3),
+		cost: new Decimal(2),
 	},
     13: {
 		name: "Auto Level",
