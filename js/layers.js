@@ -32,6 +32,25 @@ addLayer("t", {
 		description: "Allows for EXP gain.",
 		cost: new Decimal(1),
 	},
+    12: {
+		name: "Multi Attack",
+		description: "Doubles EXP gain.",
+		cost: new Decimal(3),
+	},
+    13: {
+		name: "Auto Level",
+		description: "Automatically converts your EXP into tree power whenever possible.",
+		cost: new Decimal(5),
+	},
+    14: {
+		name: "Power Cannon",
+		description: "Tree power increases EXP gain.",
+		cost: new Decimal(5),
+        effect() {
+            return player[this.layer].points.add(1).pow(0.5)
+        },
+        effectDisplay() { return format(upgradeEffect(this.layer, this.id))+"x" },
+	},
     },
 
 })
