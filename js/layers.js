@@ -28,22 +28,22 @@ addLayer("t", {
     layerShown(){return true},
     upgrades: {
     11: {
-		name: "Begin Testing",
+		title: "Begin Testing",
 		description: "Allows for EXP gain.",
 		cost: new Decimal(1),
 	},
     12: {
-		name: "Multi Attack",
+		title: "Multi Attack",
 		description: "Doubles EXP gain.",
 		cost: new Decimal(3),
 	},
     13: {
-		name: "Auto Level",
+		title: "Auto Level",
 		description: "Automatically converts your EXP into tree power whenever possible.",
 		cost: new Decimal(5),
 	},
     14: {
-		name: "Power Cannon",
+		title: "Power Cannon",
 		description: "Tree power increases EXP gain.",
 		cost: new Decimal(5),
         effect() {
